@@ -108,6 +108,7 @@ h1, h2 {
     grid-template-rows: repeat(5, 1fr);
     border-radius: var(--b-radius);
     border: var(--border-val);
+    background-color: white;
 }
 
 .trends-visual {
