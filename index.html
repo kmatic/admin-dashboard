@@ -7,8 +7,166 @@
     <title>Admin Dashboard</title>
     <link rel='stylesheet' href='style.css'>
     <script src='script.js' defer></script>
+    <script src="https://kit.fontawesome.com/37b2e508a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class='sidebar'>
+        <div class='logo'>
+            <img src='images/logoipsum-logo.svg' alt='company logo'>
+        </div>
+        <div class='nav'>
+            <div class='nav-item'>
+                <i class="fa-solid fa-chart-pie"></i>
+                <p>Overview</p>
+            </div>
+            <div class='nav-item'>
+                <i class="fa-solid fa-ticket"></i>
+                <p>Tickets</p>
+            </div>
+            <div class='nav-item'>
+                <i class="fa-solid fa-lightbulb"></i>
+                <p>Ideas</p>
+            </div>
+            <div class='nav-item'>
+                <i class="fa-solid fa-users"></i>
+                <p>Contacts</p>
+            </div>
+            <div class='nav-item'>
+                <i class="fa-solid fa-map-pin"></i>
+                <p>Agents</p>
+            </div>
+            <div class='nav-item'>
+                <i class="fa-solid fa-book"></i>
+                <p>Articles</p>
+            </div>
+        </div>
+        <div class='options'>
+            <div class='options-item'>
+                <i class="fa-solid fa-gear"></i>
+                <p>Settings</p>
+            </div>
+            <div class='options-item'>
+                <i class="fa-solid fa-crown"></i>
+                <p>Subscription</p>
+            </div>
+        </div>
+    </div>
+    <div class='main'>
+        <div class='header'>
+                <h1>Overview</h1>
+            <div class='header-right'>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-bell"></i>
+                <p>John Smith</p>
+                <img src='images/user-image.jpg' alt='user image' class='headshot'>
+            </div>
+        </div>
+        <div class='summary'>
+            <div class='summary-item'>
+                <p class='summary-text'>Open</p>
+                <p class='summary-num'>21</p>
+            </div>
+            <div class='summary-item'>
+                <p class='summary-text'>Unresolved</p>
+                <p class='summary-num'>43</p>
+            </div>
+            <div class='summary-item'>
+                <p class='summary-text'>On hold</p>
+                <p class='summary-num'>35</p>
+            </div>
+            <div class='summary-item'>
+                <p class='summary-text'>Overdue</p>
+                <p class='summary-num'>16</p>
+            </div>
+        </div>
+        <div class='trends'>
+            <div class='trends-visual'>
+                <p class='trends-text'>Today's trends</p>
+            </div>
+            <div class='trends-info'>
+                <div class='trends-info-item' style='border-top: 0'>
+                    <p class='trends-info-item-text'>Resolved</p>
+                    <p class='trends-info-item-num'>449</p>
+                </div>
+                <div class='trends-info-item'>
+                    <p class='trends-info-item-text'>Received</p>
+                    <p class='trends-info-item-num'>426</p>
+                </div>
+                <div class='trends-info-item'>
+                    <p class='trends-info-item-text'>Average first response time</p>
+                    <p class='trends-info-item-num'>33m</p>
+                </div>
+                <div class='trends-info-item'>
+                    <p class='trends-info-item-text'>Average response time</p>
+                    <p class='trends-info-item-num'>3h 8m</p>
+                </div>
+                <div class='trends-info-item'>
+                    <p class='trends-info-item-text'>Resolution within SLA</p>
+                    <p class='trends-info-item-num'>94%</p>
+                </div>
+            </div>
+        </div>
+        <div class='detailed'>
+            <div class='detailed-item'>
+                <div class='detailed-item-header'>
+                    <div class='header-container'>
+                        <h2>Unresolved tickets</h2>
+                        <a href='#'>View details</a>
+                    </div>
+                    <p>Group: <span>Support</span></p>
+                </div>
+                <div class='detailed-content' style='border-top: 0; padding-top: 10px;'>
+                    <p>Waiting on Feature Request</p>
+                    <p>4238</p>
+                </div>
+                <div class='detailed-content'>
+                    <p>Awaiting Customer Response</p>
+                    <p>1005</p>
+                </div>
+                <div class='detailed-content'>
+                    <p>Awaiting Developer Fix</p>
+                    <p>905</p>
+                </div>
+                <div class='detailed-content'>
+                    <p>Pending</p>
+                    <p>281</p>
+                </div>
+            </div>
+            <div class='detailed-item'>
+                <div class='detailed-item-header'>
+                    <div class='header-container'>
+                        <h2>Tasks</h2>
+                        <a href='#'>View all</a>
+                    </div>
+                    <p>Today</p>
+                </div>
+                <div class='detailed-content' style='border-top: 0; padding-top: 10px;'>
+                    <p>Create new task</p>
+                    <i class="fa-solid fa-square-plus"></i>
+                </div>
+                <div class='detailed-content'>
+                    <div class='checkbox-container'>
+                        <input type='checkbox'>
+                        <p>Finish ticket update</p>
+                    </div>
+                    <p class='symbol' style='background-color:rgb(255, 187, 1)'>URGENT</p>
+                </div>
+                <div class='detailed-content'>
+                    <div class='checkbox-container'>
+                        <input type='checkbox'>
+                        <p>Create new ticket example</p>
+                    </div>
+                    <p class='symbol' style='background-color:rgb(0, 219, 110)'>NEW</p>
+                </div>
+                <div class='detailed-content'>
+                    <div class='checkbox-container'>
+                        <input type='checkbox'>
+                        <p>Update ticket report</p>
+                    </div>
+                    <p class='symbol' style='color: #9fa2b4'>DEFAULT</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
